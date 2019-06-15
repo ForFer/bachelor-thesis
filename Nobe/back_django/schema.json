@@ -1,0 +1,220 @@
+info:
+  description: ''
+  title: ''
+  version: ''
+openapi: 3.0.0
+paths:
+  /entry/:
+    get:
+      operationId: entry_list
+      tags:
+      - entry
+    post:
+      operationId: entry_create
+      tags:
+      - entry
+  /entry/{id}/:
+    delete:
+      description: Retrieve, update or delete a code snippet.
+      operationId: entry_delete
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: ''
+          title: ''
+          type: string
+      tags:
+      - entry
+    get:
+      description: Retrieve, update or delete a code snippet.
+      operationId: entry_read
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: ''
+          title: ''
+          type: string
+      tags:
+      - entry
+    patch:
+      description: Retrieve, update or delete a code snippet.
+      operationId: entry_partial_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: ''
+          title: ''
+          type: string
+      tags:
+      - entry
+    put:
+      description: Retrieve, update or delete a code snippet.
+      operationId: entry_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: ''
+          title: ''
+          type: string
+      tags:
+      - entry
+  /entry_meta/:
+    get:
+      operationId: entry_meta_list
+      tags:
+      - entry_meta
+  /health/:
+    get:
+      operationId: health_list
+      tags:
+      - health
+  /image/:
+    get:
+      operationId: image_list
+      tags:
+      - image
+    post:
+      operationId: image_create
+      tags:
+      - image
+  /image/{id}/:
+    delete:
+      operationId: image_delete
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this image.
+          title: ID
+          type: integer
+      tags:
+      - image
+    get:
+      operationId: image_read
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this image.
+          title: ID
+          type: integer
+      tags:
+      - image
+    patch:
+      operationId: image_partial_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this image.
+          title: ID
+          type: integer
+      tags:
+      - image
+    put:
+      operationId: image_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this image.
+          title: ID
+          type: integer
+      tags:
+      - image
+  /images/:
+    post:
+      operationId: images_create
+      tags:
+      - images
+    put:
+      operationId: images_update
+      tags:
+      - images
+  /login/:
+    post:
+      operationId: login_create
+      tags:
+      - login
+  /user/:
+    get:
+      operationId: user_list
+      tags:
+      - user
+    post:
+      operationId: user_create
+      tags:
+      - user
+  /user/{id}/:
+    delete:
+      operationId: user_delete
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this user.
+          title: ID
+          type: integer
+      tags:
+      - user
+    get:
+      operationId: user_read
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this user.
+          title: ID
+          type: integer
+      tags:
+      - user
+    patch:
+      operationId: user_partial_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this user.
+          title: ID
+          type: integer
+      tags:
+      - user
+    put:
+      operationId: user_update
+      parameters:
+      - in: path
+        name: id
+        required: true
+        schema:
+          description: A unique integer value identifying this user.
+          title: ID
+          type: integer
+      tags:
+      - user
+  /user_meta/:
+    get:
+      operationId: user_meta_list
+      tags:
+      - user_meta
+  /users/:
+    get:
+      operationId: users_list
+      tags:
+      - users
+servers:
+- url: ''
